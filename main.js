@@ -27,7 +27,7 @@ firstDino.style.width = "324px";
 function orangeChanger() {
   firstOne.style.color = "orange";
 }
-firstOne.addEventListener("click", orangeChanger());
+firstOne.addEventListener("click", orangeChanger);
 
 // 2. Add an event listener to the first dinosaur so that when they are clicked, they receive a red border.
 
@@ -35,7 +35,7 @@ function redBorder() {
   firstDino.style.border = "red 2px solid";
 }
 
-firstDino.addEventListener("click", redBorder());
+firstDino.addEventListener("click", redBorder);
 
 // 3. Add an event listener to the feathered dinosaur, so that when they are clicked, they become 50% transparent.
 
@@ -44,7 +44,7 @@ function transparentFun() {
 }
 
 const feathered = imgDinos[3];
-feathered.addEventListener("click", transparentFun());
+feathered.addEventListener("click", transparentFun);
 
 // 4. Add an event listener to the "Switch Background Color" button so that when it is clicked, we switch the background color of the row of dinosaurs to a color of your choice.
 
@@ -55,7 +55,7 @@ function backgroundSwitch() {
 
 const thisButton = document.querySelector("#toggle");
 
-thisButton.addEventListener("click", backgroundSwitch());
+thisButton.addEventListener("click", backgroundSwitch);
 
 // 5. Add an event listener to the dinosaur with the id `biggify` that, when HOVERED, grows the image to 200 pixels wide. Note that this is a different event, and you'll likely need to do some research on what different string you'll need to pass. It's not gonna be `click`!
 
@@ -65,4 +65,4 @@ function makesBigger() {
 
 const lastDino = document.querySelector("#biggify");
 
-lastDino.addEventListener("mouseover", makesBigger());
+lastDino.addEventListener("mouseover", makesBigger);
